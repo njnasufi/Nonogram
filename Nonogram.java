@@ -4,13 +4,13 @@ import java.util.*;
 public class Nonogram {
     ArrayList <ArrayList <Integer>> rowHeaders, columnHeaders;
 
-    public Nonogram(ArrayList<ArrayList <Integer>> rowHeaders, ArrayList<ArrayList <Integer>> columnHeaders){
+    public Nonogram(ArrayList rowHeaders, ArrayList columnHeaders) {
         this.rowHeaders = rowHeaders;
         this.columnHeaders = columnHeaders;
     }
 
     public static Nonogram fromFile(String text){
-        ArrayList<ArraList> rowHeaders = new ArrayList();
+        ArrayList<ArrayList> rowHeaders = new ArrayList();
         ArrayList<ArrayList> columnHeaders = new ArrayList();
 
         String[] headerSets = text.split("=");
@@ -30,7 +30,7 @@ public class Nonogram {
                     currentHeaders.add(header);
                 }
 
-                currentHeader = columnHeaders;
+                currentHeaders = columnHeaders;
 
         }
         
