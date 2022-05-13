@@ -300,9 +300,4 @@ public class Solution implements Comparable<Solution> {
 
 
 
-//getTally function
-// getSum function
 
-// me analizu mutateLine
-
-// kena met te crossover function
